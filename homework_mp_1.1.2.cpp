@@ -57,11 +57,10 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 
-	int y = 10;
 	std::thread t1(func1);
 	std::thread t2(func2);
 	t1.join();
-	t1.join();
+	t2.join();
 
 	return 0;
 }
